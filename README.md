@@ -16,7 +16,7 @@ An object-oriented Command Line Interface (CLI) tool for real-time currency conv
 
 ### Prerequisites
 
-* Java Development Kit (JDK) 17 or higher.
+* Java Development Kit (JDK) 25 or higher.
 * A valid API Key from ExchangeRate-API.
 * The Gson library (jar file) accessible in the project's classpath.
 
@@ -24,7 +24,7 @@ An object-oriented Command Line Interface (CLI) tool for real-time currency conv
 
 1. **Clone the repository:**
    ``` bash
-   git clone [https://github.com/Acheronp/currency-converter-java.git](https://github.com/Acheronp/currency-converter-java.git)
+   git clone https://github.com/Acheronp/currency-converter-java.git
    cd currency-converter-java```
 3. **API Configuration:**
 Configure your API Key in the src/com/currencyconverter/services/APIQuery.java file.
