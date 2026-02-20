@@ -23,7 +23,8 @@ An object-oriented Command Line Interface (CLI) tool for real-time currency conv
 ### Installation and Usage
 
 1. **Clone the repository:**
-   ```bash git clone [https://github.com/Acheronp/currency-converter-java.git](https://github.com/Acheronp/currency-converter-java.git)
+   ```bash
+   git clone [https://github.com/Acheronp/currency-converter-java.git](https://github.com/Acheronp/currency-converter-java.git)
    cd currency-converter-java
 2. **API Configuration:**
 Configure your API Key in the src/com/currencyconverter/services/APIQuery.java file.
