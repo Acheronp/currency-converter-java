@@ -25,9 +25,9 @@ public class Main {
                 6.  Real brasileño   ==> Dólar
                 7.  Soles            ==> Dólar
                 8.  Peso chileno     ==> Dolar
-                9.  Salir
+                9.  Exit
 
-                Elija una opción válida:
+                Choose a valid option:
                 *****************************************************
                 """;
 
@@ -47,7 +47,7 @@ public class Main {
                 System.out.println(message);
 
                 if (!scanner.hasNextInt()) {
-                    System.out.println("Error: Por favor, ingrese un número entero.");
+                    System.out.println("Please enter an integer.");
                     scanner.nextLine();
                     continue;
                 }
@@ -59,14 +59,14 @@ public class Main {
                     break;
                 }
                 if (!options.containsKey(option)) {
-                    System.out.println("Opción no válida, intente de nuevo.");
+                    System.out.println("Invalid option, please try again.");
                     continue;
                 }
 
-                System.out.println("Ingrese el valor que desea convertir: ");
+                System.out.println("Enter the value you want to convert: ");
 
                 if (!scanner.hasNextDouble()) {
-                    System.out.println("Error: El valor debe ser un número.");
+                    System.out.println("The value must be a number.");
                     scanner.nextLine();
                     continue;
                 }
@@ -81,13 +81,13 @@ public class Main {
                 double finalAmount = converter.convert(amount, targetCurrency,
                         request.fetchExchangeRates(baseCurrency));
 
-                System.out.printf("El valor %.2f [%s] corresponde al valor de %.2f [%s]%n \n",
+                System.out.printf("The value %.2f [%s] corresponds to the value of %.2f [%s]%n \n",
                         amount,
                         baseCurrency,
                         finalAmount,
                         targetCurrency);
             } catch (Exception e) {
-                System.out.println("Ocurrió un error inesperado: " + e.getMessage());
+                System.out.println("An unexpected error occurred: " + e.getMessage());
                 scanner.nextLine(); 
             }
         }
